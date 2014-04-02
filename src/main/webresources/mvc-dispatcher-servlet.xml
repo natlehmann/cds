@@ -31,7 +31,7 @@
 
 	<context:component-scan base-package="ar.com.natlehmann.cdcatalogue.controllers" />
 	<context:component-scan base-package="ar.com.natlehmann.cdcatalogue.dao" />
-	<context:component-scan base-package="ar.com.natlehmann.cdcatalogue.servicios" />
+	<context:component-scan base-package="ar.com.natlehmann.cdcatalogue.services" />
 	
 	<context:property-placeholder location="classpath:configuracion.properties"/>
 
@@ -67,7 +67,7 @@
 		<property name="dataSource" ref="dataSource" />
 		<property name="packagesToScan">
 			<array>
-				<value>ar.com.natlehmann.cdcatalogue.modelo</value>
+				<value>ar.com.natlehmann.cdcatalogue.model</value>
 			</array>
 		</property>
 		<property name="hibernateProperties">
